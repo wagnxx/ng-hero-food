@@ -7,12 +7,8 @@ import { AppRoutingModule,AppRoutingDeclarations } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
-import { HeaderComponent } from './header/header.component';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { StarRatingComponent } from './star-rating/star-rating.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -34,9 +30,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ],
     declarations: [
         AppComponent,
-        HeaderComponent,
-        StarRatingComponent,
-        NotFoundComponent, 
         ...AppRoutingDeclarations,
     ],
     providers: [
