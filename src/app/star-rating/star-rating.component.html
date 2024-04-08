@@ -1,0 +1,11 @@
+<div class="star-rating">
+    <span class="star" 
+          *ngFor="let star of stars; let i = index"
+          [class.checked]="i < value" 
+          [style.color]="i < value ? checkedcolor : uncheckedcolor"
+          [style.font-size.px]="size"
+          (click)="rate(i + 1)">
+      &#9733;
+    </span>
+  </div>
+  

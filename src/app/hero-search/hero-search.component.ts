@@ -21,7 +21,8 @@ export class HeroSearchComponent implements OnInit {
   constructor(private heroService: HeroService) {}
 
   // Push a search term into the observable stream.
-  search(term: string): void {
+  search(term: string, event:Event): void {
+    console.log("event::", event)
     this.searchTerms.next(term);
   }
 
