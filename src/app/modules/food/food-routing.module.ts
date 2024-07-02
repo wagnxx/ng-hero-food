@@ -10,10 +10,10 @@ const routes: Routes = [
   {
     path: '', component: FoodManageComponent,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'prefix' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'food/:id', component: FoodPageComponent },
-      { path: 'cart-page', component: CartPageComponent },
+      { path: 'type/:id', component: FoodPageComponent },
+      { path: 'cart', component: CartPageComponent },
     ]
   },
 ];
